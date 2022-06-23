@@ -11,10 +11,35 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
         const name = cocktail.strDrink
         const imageUrl = cocktail.strDrinkThumb
 
+        let div = document.createElement("div")
+        let image = document.createElement("img")
+        image.src = imageUrl
+        let h3 = document.createElement("h3")
+        h3.textContent= name
+        let button = document.createElement("button")
+        button.textContent = "Add"
+        button.addEventListener('click',()=>{
+            alert('buttton clicked')
+            button.setAttribute('data-count',add + 1);
+        });
+        button.id = id
+        
+        div.appendChild(image)
+        div.appendChild(h3)
+        div.appendChild(button)
 
-})
+        document.querySelector(".cocktail-details").appendChild(div)
 
- });
+
+      })
+
+
+       
+
+
+
+    
+    });
    
     
 
