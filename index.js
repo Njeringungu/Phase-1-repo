@@ -12,35 +12,33 @@ document.addEventListener("DOMContentLoaded",()=>{
         const imageUrl = cocktail.strDrinkThumb
 
         let div = document.createElement("div")
-        div.className = "cards"
+            div.className = "cards"
         let image = document.createElement("img")
-        image.src = imageUrl
-        image.className = "images"
+            image.src = imageUrl
+            image.className = "images"
         let h3 = document.createElement("h3")
-        h3.textContent= name
+            h3.textContent= name
 
         let button = document.createElement("button")
         button.textContent = "Add Cart"
-
-
         button.addEventListener('click',(e)=>{
         
        let cocktailItem = e.target.previousSibling.textContent
        let cartlist = document.querySelector(".cart-item")
        let p = document.createElement("p")
        p.textContent = cocktailItem
+
+       
        let deleteButton = document.createElement("button")
        deleteButton.textContent = "X"
-       deleteButton.addEventListener('click',() => {
+       deleteButton.addEventListener('click',(e) => {
         p.remove()
        })
-       button.deleteButton = deleteButton
+    
        p.appendChild(deleteButton)
        cartlist.appendChild(p)
-       console.log(e)
-     
-
-        });
+       
+     });
         button.id = id
         
         div.appendChild(image)
@@ -50,15 +48,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         document.querySelector(".cocktail-details").appendChild(div)
        
         })
-      cart = document.querySelector(".cart-item")
-      cart.addEventListener('click',(e)=>{
-          
-          
-      })
-     
         
-    
-        //for (let i = 0; i < theCocktails.length; i++) 
          
 });
    
