@@ -1,3 +1,4 @@
+
 body {
     background-color: yellow;
   }
@@ -6,6 +7,9 @@ body {
     height: 250px;
 }
   .cart-item {
+    font-size: larger ;
+    font-family: Caveat;
+    font-weight: 800;
    text-align: right;
     color: red;
     margin-right: 10px;
@@ -14,7 +18,8 @@ body {
 
   #name{
     color: red;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Nerko One;
+    font-size: 50px;
     text-align: center;
   }
   .cocktail-details{
@@ -26,4 +31,8 @@ body {
   .cards{
     width: 300px;
    
+  }
+  img{
+    height: 20px;
+    width: 20px;
   }

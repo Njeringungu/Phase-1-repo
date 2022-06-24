@@ -22,12 +22,11 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
         let button = document.createElement("button")
         button.textContent = "Add Cart"
 
+
         button.addEventListener('click',()=>{
         alert('buttton clicked')
-        
         });
         button.id = id
-        
         
         div.appendChild(image)
         div.appendChild(h3)
@@ -35,13 +34,11 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
        
         document.querySelector(".cocktail-details").appendChild(div)
        
-        
-        
-
-        
-        
+        })
+      cart = document.querySelector(".cart-item")
+      cart.addEventListener('click',()=>{
+          alert('cart clicked')
       })
-
 
     });
    
