@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded",()=>{
        let deleteButton = document.createElement("button")
        deleteButton.textContent = "X"
        deleteButton.addEventListener('click',() => {
-       
+        p.remove()
        })
        button.deleteButton = deleteButton
        p.appendChild(deleteButton)
