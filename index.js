@@ -1,6 +1,6 @@
 
-
-fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
+document.addEventListener("DOMContentLoaded",()=>{
+    fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
 
     .then(response => response.json())
     .then(data => {
@@ -23,8 +23,16 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
         button.textContent = "Add Cart"
 
 
-        button.addEventListener('click',()=>{
-        alert('buttton clicked')
+        button.addEventListener('click',(e)=>{
+        
+       let cocktailItem = e.target.previousSibling.textContent
+       let cartlist = document.querySelector(".cart-item")
+       let p = document.createElement("p")
+       p.textContent = cocktailItem
+       
+       cartlist.appendChild(p)
+        
+
         });
         button.id = id
         
@@ -36,12 +44,18 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
        
         })
       cart = document.querySelector(".cart-item")
-      cart.addEventListener('click',()=>{
-          alert('cart clicked')
+      cart.addEventListener('click',(e)=>{
+          
           
       })
-
-    });
+     
+        
+    
+        //for (let i = 0; i < theCocktails.length; i++) 
+         
+});
    
+})
+
    
 
