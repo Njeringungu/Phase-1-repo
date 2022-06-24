@@ -29,10 +29,10 @@ Add two more event listeners
 
 Add cart and activate the add-to-cart feature.
 
-Make the app responsive so that users can select their preffered, add them to their carts, and delete anything they don't want.
+Make the app responsive so that users can select their preffered drinks, add them to cart, and delete anything they don't want.
 
 Use fetch to GET drinks data.
-use the data retrived for DOM Manipulation to achive desired goals.
+Use the data retrived for DOM Manipulation to achive desired goals.
 
 
 GitHub link: https://github.com/Njeringungu/Phase-1-repo.git
