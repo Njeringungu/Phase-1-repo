@@ -29,10 +29,16 @@ document.addEventListener("DOMContentLoaded",()=>{
        let cartlist = document.querySelector(".cart-item")
        let p = document.createElement("p")
        p.textContent = cocktailItem
-       
+       let deleteButton = document.createElement("button")
+       deleteButton.textContent = "X"
+       deleteButton.addEventListener('click',() => {
+        
+       })
+       button.deleteButton = deleteButton
+       p.appendChild(deleteButton)
        cartlist.appendChild(p)
         
-
+console.log(e)
         });
         button.id = id
         
