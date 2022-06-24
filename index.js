@@ -32,13 +32,14 @@ document.addEventListener("DOMContentLoaded",()=>{
        let deleteButton = document.createElement("button")
        deleteButton.textContent = "X"
        deleteButton.addEventListener('click',() => {
-        
+       
        })
        button.deleteButton = deleteButton
        p.appendChild(deleteButton)
        cartlist.appendChild(p)
-        
-console.log(e)
+       console.log(e)
+     
+
         });
         button.id = id
         
